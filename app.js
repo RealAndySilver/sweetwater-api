@@ -120,7 +120,7 @@ var UserSchema= new mongoose.Schema({
 
 function sendPush(message,token,action){
 
-	var options = { "gateway": "gateway.sandbox.push.apple.com" };
+	var options = { "gateway": "gateway.push.apple.com" };
     var apnConnection = new apn.Connection(options);
     var myDevice = new apn.Device(token);
     var note = new apn.Notification();
